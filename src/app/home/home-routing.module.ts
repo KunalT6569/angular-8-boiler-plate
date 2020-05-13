@@ -4,6 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { SharedHomeModule } from './shared-home/shared-home.module';
 import { HomeComponent } from './home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CreateCourseComponent } from './create-course/create-course.component';
+import { EditCourseComponent } from './edit-course/edit-course.component';
+import { DeleteCourseComponent } from './delete-course/delete-course.component';
 
 const homeRoutes: Routes = [
   {
@@ -13,6 +16,18 @@ const homeRoutes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent
+      },
+      {
+        path: 'create',
+        component: CreateCourseComponent
+      },
+      {
+        path: 'edit',
+        component: EditCourseComponent
+      },
+      {
+        path: 'delete',
+        component: DeleteCourseComponent
       },
       {
         path: 'reports',

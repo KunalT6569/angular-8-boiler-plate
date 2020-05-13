@@ -1,14 +1,8 @@
 <div>
-  <app-header [isOpen]="isOpen" (toggleSidebar)="toggleSidebar($event)"></app-header>
+  <app-header></app-header>
 </div>
-<div class="home-container">
-  <div class="col-nav">
-    <app-sidebar [isOpen]="isOpen"></app-sidebar>
-  </div>
-  <div class="col-page">
-    <router-outlet></router-outlet>
-  </div>
-</div>
+<router-outlet></router-outlet>
+
 <div>
   <app-footer></app-footer>
 </div>

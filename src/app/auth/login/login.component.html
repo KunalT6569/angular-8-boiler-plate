@@ -1,6 +1,7 @@
-<alert type="danger" *ngIf="showAlert">
+<span type="danger" *ngIf="showAlert">
     Please enter a valid username/password and try submitting again.
-</alert>
+</span>
+
 <div class="container-login bg-light">
   <form [formGroup]="loginForm" (ngSubmit)="login()" class="login-form">
     <div class="form-group">
